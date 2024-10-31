@@ -10,7 +10,8 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
-        -- add more arguments for adding more language servers
+        "clangd",
+        "pylsp"
       },
       handlers = {
         ["pylsp"] = function()
@@ -22,7 +23,7 @@ return {
                     enabled = false
                   },
                   mccabe = {
-                    enabled = false
+                    enabled = true
                   },
                   pycodestyle = {
                     enabled = false
@@ -31,7 +32,7 @@ return {
                     enabled = true
                   },
                   yapf = {
-                    enabled = true
+                    enabled = false
                   }
                   
                 }

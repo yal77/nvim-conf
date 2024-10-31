@@ -44,22 +44,6 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
-      pylsp = {
-        plugins = {
-          flake8 = {
-            enabled = false
-          },
-          mccabe = {
-            enabled = false
-          },
-          pycodestyle = {
-            enabled = false
-          },
-          autopep8 = {
-            enabled = false
-          } 
-        }
-      }
     },
     -- customize how language servers are attached
     handlers = {
